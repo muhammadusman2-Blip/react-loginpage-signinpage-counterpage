@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 function SignUp() {
   const containerStyle = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     height: "100vh",
-    background: "linear-gradient(to right, #6a11cb, #2575fc)", 
+    background: "linear-gradient(to right, #6a11cb, #2575fc)",
     fontFamily: "Arial, sans-serif",
   };
 
@@ -47,16 +49,18 @@ function SignUp() {
   return (
     <div style={containerStyle}>
       <div style={cardStyle}>
-        <h2 style={headingStyle}>Sign UP</h2>
+        <h2 style={headingStyle}>Sign Up</h2>
         <hr />
-        <form action="">
-          {/* <input type="text" placeholder="Enter your name" style={inputStyle} /> */}
+        <form>
+          <input type="text" placeholder="Enter your name" style={inputStyle} />
           <input type="email" placeholder="Enter your email" style={inputStyle} />
           <input type="password" placeholder="Enter your password" style={inputStyle} />
           <button type="submit" style={buttonStyle}>
-            Sign In
+            Sign Up
           </button>
-        <a href="./signin">sign in</a>
+          <p>
+            Already have an account? <Link to="/login">Sign In</Link>
+          </p>
         </form>
       </div>
     </div>

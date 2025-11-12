@@ -1,15 +1,12 @@
-import { useContext } from "react";
+import { Link } from "react-router-dom";
 
-// importsi Signup from "./signup";
-function  Signin() {
-  // const {sign,setSign}=useContext(globalSign)
-
+function Signin() {
   const containerStyle = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     height: "100vh",
-    background: "linear-gradient(to right, #6a11cb, #2575fc)", 
+    background: "linear-gradient(to right, #6a11cb, #2575fc)",
     fontFamily: "Arial, sans-serif",
   };
 
@@ -54,17 +51,17 @@ function  Signin() {
       <div style={cardStyle}>
         <h2 style={headingStyle}>Sign In</h2>
         <hr />
-        <form action="">
+        <form onSubmit={(e) => e.preventDefault()}>
           <input type="text" placeholder="Enter your name" style={inputStyle} />
           <input type="email" placeholder="Enter your email" style={inputStyle} />
           <input type="password" placeholder="Enter your password" style={inputStyle} />
           <button type="submit" style={buttonStyle}>
             Sign In
           </button>
-          <a href="./signup">sign up</a>
-          {/* <button onClick={()=> setSign("signup")}>sign up</button> */}
+          <p>
+            Don't have an account? <Link to="/signup">Sign Up</Link>
+          </p>
         </form>
-        
       </div>
     </div>
   );
