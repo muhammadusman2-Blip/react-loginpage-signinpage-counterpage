@@ -8,10 +8,10 @@ function Nike(){
                 </div>
                 <div>
                     <ul>
-                        <li href="#">Menu</li>
-                        <li href="#">Location</li>
-                        <li href="#">About</li>
-                        <li href="#">Contact</li>
+                       <li><a href="javascript:void(0)">Menu</a></li>
+                      <li><a href="javascript:void(0)">Location</a></li>
+                     <li><a href="javascript:void(0)">About</a></li>
+                     <li><a href="javascript:void(0)">Contact</a></li>
                     </ul>
                 </div>
                 <div>

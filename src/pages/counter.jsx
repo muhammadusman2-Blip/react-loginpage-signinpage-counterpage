@@ -2,10 +2,10 @@ import { useParams } from "react-router-dom";
 
 import React, { useReducer } from "react";
 
-   const initailValue={
-    count:0,
-    count2:5,
-   };
+const initialValue = {
+  count: 0,
+  count2: 5,
+};
    const reducer=(state,action)=>{
     switch (action.type) {
         case "increment":
@@ -43,14 +43,15 @@ const counterbuttton={
 const counterparent={
   backgroundImage: 'url("https://img.freepik.com/free-vector/modern-abstract-dark-violate-pink-background_84443-2788.jpg?semt=ais_hybrid&w=740&q=80")',
   backgroundSize: 'cover',
-  backgroundPosition: 'center', 
-  backgroundRepeat:"no-repeat" ,
-    height:"100vh",
-    width:"100wv",
-     display: "flex",
-    justifyContent: "center",
-    alignItems: "center"
-}
+  backgroundPosition: 'center',
+  backgroundRepeat: "no-repeat",
+  height: "100vh",
+  width: "100vw",  // fix here
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center"
+};
+
    
 
 function Counter(){
