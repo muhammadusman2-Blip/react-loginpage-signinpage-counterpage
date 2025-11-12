@@ -7,6 +7,8 @@ import Counter from "../pages/counter";
 import Navbar from "../pages/Navbar";
 import Firstapi from "../pages/firstapifetchdata/firstapifetchdata";
 import Signin from "../component/signin";
+import Nike from "../pages/Nike";
+import Textarea from "../pages/textarea";
 
 function Approuter(){
     return(
@@ -20,6 +22,8 @@ function Approuter(){
             <Route path="counter" element={<Counter/>}/>
             <Route path="navbar" element={<Navbar/>}/>
             <Route path="api" element={<Firstapi/>}/>
+            <Route path="nike" element={<Nike/>}/>
+            <Route path="text" element={<Textarea/>}/>
         </Routes>
         </BrowserRouter>
     )

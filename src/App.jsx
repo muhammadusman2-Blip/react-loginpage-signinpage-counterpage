@@ -6,19 +6,10 @@ import Usercontextt from "./pages/usercontext";
 // import Signin from "./component/signin";
 
 function App() {
-  const product=[{
-    price:99999,
-    names:"iphone 105 Max",
-    quantity:0,
-  },
-  {
-    price:99999,
-    names:"Radme note 105 Max",
-    quantity:0,
-  }
-]
+  
+
   return (
-    <Usercontextt>/
+    <Usercontextt>
       <Approuter />
     </Usercontextt>
    
